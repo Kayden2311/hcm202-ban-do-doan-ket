@@ -1,0 +1,486 @@
+[
+  {
+    "id": "dt-pacbo",
+    "perspective": "national",
+    "category": "minority",
+    "title": "Pác Bó (Cao Bằng) – Cội nguồn cách mạng và tình đồng bào Việt Bắc",
+    "locationName": "Pác Bó, Hà Quảng, Cao Bằng",
+    "coordinates": [22.7089, 106.2631],
+    "year": "1941",
+    "image": {
+      "url": "https://baotanglichsu.vn/DataFiles/Uploaded/image/data%20Hung/thang%205%20nam%202020/Bac%20Ho%20ve%20Pac%20Bo/1.jpg",
+      "caption": "Bác Hồ tại hang Pác Bó trong vòng tay che chở của đồng bào các dân tộc Nùng, Tày."
+    },
+    "quote": {
+      "text": "Đồng bào Thổ, đồng bào Nùng, đồng bào Mán… người thì giúp chúng tôi ăn, kẻ thì cho chúng tôi áo, bảo bọc chúng tôi như ruột thịt.",
+      "source": "Hồ Chí Minh: Báo cáo trước Quốc hội, 1953"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=6hjdQX6mUAo",
+      "label": "Bác Hồ với đồng bào dân tộc thiểu số - VNEWS"
+    },
+    "shortDescription": "Căn cứ địa đầu tiên khi Người về nước, minh chứng cho sức mạnh toàn dân khi cách mạng được đồng bào thiểu số đùm bọc, chở che."
+  },
+  {
+    "id": "dt-pleiku",
+    "perspective": "national",
+    "category": "minority",
+    "title": "Thư gửi Đại hội các Dân tộc thiểu số miền Nam tại Pleiku",
+    "locationName": "Pleiku, Gia Lai",
+    "coordinates": [13.9833, 108.0],
+    "year": "1946",
+    "image": {
+      "url": "https://baogialai.com.vn/dataimages/202104/original/images2798606_1.jpg",
+      "caption": "Bức thư lịch sử của Chủ tịch Hồ Chí Minh gửi Đại hội các dân tộc thiểu số miền Nam tại Pleiku (19/4/1946)."
+    },
+    "quote": {
+      "text": "Đồng bào Kinh hay Thổ, Mường hay Mán, Gia Rai hay Ê Đê… đều là con cháu Việt Nam, đều là anh em ruột thịt. Sông có thể cạn, núi có thể mòn, nhưng lòng đoàn kết của chúng ta không bao giờ giảm bớt.",
+      "source": "Thư gửi Đại hội các Dân tộc thiểu số miền Nam, 19/4/1946"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=JcvDTy5YMHI",
+      "label": "Mãi khắc ghi thư Bác gửi Đại hội Pleiku"
+    },
+    "shortDescription": "Bản tuyên ngôn bất hủ khẳng định sự bình đẳng, gắn bó keo sơn không thể chia cắt giữa các dân tộc anh em."
+  },
+  {
+    "id": "dt-thuan-chau",
+    "perspective": "national",
+    "category": "minority",
+    "title": "Kỳ đài Thuận Châu – Bác Hồ nói chuyện với đồng bào Tây Bắc",
+    "locationName": "Thuận Châu, Sơn La",
+    "coordinates": [21.4278, 103.6769],
+    "year": "1959",
+    "image": {
+      "url": "https://baosonla.org.vn/uploads/news/2021_05/bac-ho-noi-chuyen-o-thuan-chau.jpg",
+      "caption": "Chủ tịch Hồ Chí Minh về thăm và nói chuyện với cán bộ, chiến sĩ, đồng bào Tây Bắc tại Thuận Châu (7/5/1959)."
+    },
+    "quote": {
+      "text": "Ngày nay, tất cả các dân tộc Kinh, Thái, Mường, Mèo… đều là anh em ruột thịt một nhà, cùng nhau thi đua xây dựng bản mường ấm no.",
+      "source": "Huấn thị tại Thuận Châu, 7/5/1959"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=TSOuAPeajZ0",
+      "label": "Kỳ đài Thuận Châu | Nơi Bác Hồ nói chuyện với đồng bào Tây Bắc"
+    },
+    "shortDescription": "Chuyến thăm lịch sử sau chiến thắng Điện Biên Phủ, khẳng định tình đoàn kết khăng khít nơi miền phên dậu Tây Bắc."
+  },
+  {
+    "id": "dt-tuyen-quang",
+    "perspective": "national",
+    "category": "minority",
+    "title": "Tuyên Quang – Bác Hồ huấn thị về tình thân tộc với người vùng cao",
+    "locationName": "Chiến khu Tuyên Quang",
+    "coordinates": [21.8233, 105.2142],
+    "year": "1945",
+    "image": {
+      "url": "https://tuyenquang.gov.vn/uploads/images/2020/05/bac-ho-tuyen-quang.jpg",
+      "caption": "Bác Hồ thăm hỏi các cháu học sinh vùng cao và đồng bào các dân tộc thiểu số tại Tuyên Quang."
+    },
+    "quote": {
+      "text": "Đồng bào Kinh và Chính phủ rất thương mến đồng bào Mán, Thổ và coi như anh chị em trong một nhà, phải hết lòng giúp đỡ nhau cùng tiến bộ.",
+      "source": "Huấn thị của Chủ tịch Hồ Chí Minh, 23/11/1945"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=6hjdQX6mUAo",
+      "label": "Học Bác mỗi ngày - Bác Hồ với đồng bào thiểu số"
+    },
+    "shortDescription": "Khẳng định chính sách bình đẳng bác ái giữa các dân tộc ngay từ những ngày đầu lập quốc."
+  },
+  {
+    "id": "dt-my-bang",
+    "perspective": "national",
+    "category": "minority",
+    "title": "Mỹ Bằng (Yên Sơn) – Bác Hồ thăm gia đình đồng bào Dao",
+    "locationName": "Mỹ Bằng, Yên Sơn, Tuyên Quang",
+    "coordinates": [21.85, 105.25],
+    "year": "1952",
+    "image": {
+      "url": "https://baotuyenquang.com.vn/file/dataimages/201905/original/images1412586_anh1.jpg",
+      "caption": "Chủ tịch Hồ Chí Minh đến thăm thân tình một gia đình người Dao ở xã Mỹ Bằng năm 1952."
+    },
+    "quote": {
+      "text": "Cách mạng đã do Việt Bắc mà thành công thì kháng chiến sẽ do Việt Bắc mà thắng lợi.",
+      "source": "Hồ Chí Minh: Thư gửi đồng bào Việt Bắc, 1952"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=6hjdQX6mUAo",
+      "label": "Tư liệu ký ức Bác Hồ thăm đồng bào Dao"
+    },
+    "shortDescription": "Hình ảnh gần gũi, thân tình của Bác với từng gia đình vùng cao trong những năm tháng kháng chiến gian khổ."
+  },
+  {
+    "id": "tg-phat-diem",
+    "perspective": "national",
+    "category": "religion",
+    "title": "Phát Diệm – Bác Hồ và tinh thần Kính Chúa Yêu Nước",
+    "locationName": "Tòa Giám mục Phát Diệm, Kim Sơn, Ninh Bình",
+    "coordinates": [20.0928, 106.0792],
+    "year": "1945",
+    "image": {
+      "url": "https://images.nhandan.vn/nhandan/2021/09/02/bac-ho-va-dong-bao-cong-giao.jpg",
+      "caption": "Chủ tịch Hồ Chí Minh luôn dành sự tôn trọng đặc biệt và tình cảm ấm áp cho đồng bào Công giáo."
+    },
+    "quote": {
+      "text": "Chúa Giêsu dạy ta yêu thương nhân loại, tha thứ kẻ thù… Người Công giáo Việt Nam yêu nước tức là làm sáng danh Thiên Chúa.",
+      "source": "Thư gửi đồng bào Công giáo nhân dịp Lễ Giáng sinh, 1945"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=he4-R846-0A",
+      "label": "Lời chúc Giáng sinh và tự do tín ngưỡng của Chủ tịch Hồ Chí Minh"
+    },
+    "shortDescription": "Tôn trọng tự do tín ngưỡng, khơi dậy tinh thần sống phúc âm giữa lòng dân tộc để phụng sự kháng chiến."
+  },
+  {
+    "id": "tg-quan-su",
+    "perspective": "national",
+    "category": "religion",
+    "title": "Chùa Quán Sứ (Hà Nội) – Phật giáo đồng hành cùng dân tộc",
+    "locationName": "Chùa Quán Sứ, Hoàn Kiếm, Hà Nội",
+    "coordinates": [21.0255, 105.8458],
+    "year": "1946",
+    "image": {
+      "url": "https://phatgiao.org.vn/images/bac-ho-chua-quan-su.jpg",
+      "caption": "Bác Hồ tiếp các đại biểu Phật giáo tại chùa Quán Sứ, trân trọng tinh thần hộ quốc an dân."
+    },
+    "quote": {
+      "text": "Phật giáo Việt Nam với dân tộc như hình với bóng, tuy hai mà một. Tinh thần từ bi của Đức Phật hòa quyện cùng lòng yêu nước của nhân dân ta.",
+      "source": "Hồ Chí Minh tiếp đoàn đại biểu Tăng ni Phật tử, 1946"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=6hjdQX6mUAo",
+      "label": "Tư liệu Phật giáo Việt Nam đồng hành cùng dân tộc"
+    },
+    "shortDescription": "Quy tụ giới tăng ni, phật tử cởi áo cà sa khoác chiến bào bảo vệ nền độc lập tự do của Tổ quốc."
+  },
+  {
+    "id": "tt-bac-bo-phu",
+    "perspective": "national",
+    "category": "intellectual",
+    "title": "Bắc Bộ Phủ – Trọng dụng nhân sĩ cựu triều và trí thức yêu nước",
+    "locationName": "Bắc Bộ Phủ, Hoàn Kiếm, Hà Nội",
+    "coordinates": [21.0261, 105.8564],
+    "year": "1946",
+    "image": {
+      "url": "https://baotanglichsu.vn/data/images/Bac-Ho-va-Huynh-Thuc-Khang.jpg",
+      "caption": "Chủ tịch Hồ Chí Minh trao trọng trách Quyền Chủ tịch nước cho Cụ Huỳnh Thúc Kháng năm 1946."
+    },
+    "quote": {
+      "text": "Tôi xin đem hết tài mọn giúp Cụ, khi Cụ đi vắng, tôi sẽ 'Dĩ bất biến, ứng vạn biến' để giữ vững nền độc lập.",
+      "source": "Lời Cụ Huỳnh Thúc Kháng đáp lại sự tin cẩn tuyệt đối của Bác Hồ, 1946"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=TSOuAPeajZ0",
+      "label": "Tư liệu lời dặn Dĩ bất biến, ứng vạn biến"
+    },
+    "shortDescription": "Tư tưởng đại đoàn kết vượt lên mọi thành kiến: Mời các bậc hiền tài cựu triều cùng chung tay cứu nước."
+  },
+  {
+    "id": "tt-viet-bac-khoa-hoc",
+    "perspective": "national",
+    "category": "intellectual",
+    "title": "Chiến khu Việt Bắc – Trí thức kiều bào theo Bác lên rừng kháng chiến",
+    "locationName": "Việt Bắc",
+    "coordinates": [21.75, 105.35],
+    "year": "1946",
+    "image": {
+      "url": "https://vusta.vn/upload/tran-dai-nghia-bac-ho.jpg",
+      "caption": "Giáo sư Trần Đại Nghĩa và các trí thức theo Bác từ Pháp về chiến khu gian khổ."
+    },
+    "quote": {
+      "text": "Trí thức là vốn liếng quý báu của dân tộc. Không có trí thức hợp tác với công nông thì cách mạng không thể thành công.",
+      "source": "Hồ Chí Minh: Bài nói chuyện với trí thức, 1947"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=6hjdQX6mUAo",
+      "label": "Ký ức GS. Trần Đại Nghĩa theo Bác về nước chế tạo vũ khí"
+    },
+    "shortDescription": "Sức cảm hóa của Bác khiến các nhà khoa học đỉnh cao từ bỏ lương cao ở châu Âu về phụng sự Tổ quốc."
+  },
+  {
+    "id": "tt-sai-gon-thong-nhat",
+    "perspective": "national",
+    "category": "intellectual",
+    "title": "Sài Gòn – Non sông thu về một mối, hòa hợp dân tộc",
+    "locationName": "Dinh Độc Lập, TP. Hồ Chí Minh",
+    "coordinates": [10.777, 106.6953],
+    "year": "1975",
+    "image": {
+      "url": "https://nhandan.vn/images/hoa-hop-dan-toc-1975.jpg",
+      "caption": "Mùa xuân đại thắng năm 1975, hiện thực hóa di nguyện non sông liền một dải của Bác Hồ."
+    },
+    "quote": {
+      "text": "Nước Việt Nam là một, dân tộc Việt Nam là một. Sông có thể cạn, núi có thể mòn, song chân lý ấy không bao giờ thay đổi.",
+      "source": "Hồ Chí Minh: Tuyên bố tháng 2/1946"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=JcvDTy5YMHI",
+      "label": "Khúc khải hoàn 30/4 và chân lý Nước Việt Nam là một"
+    },
+    "shortDescription": "Đỉnh cao của tư tưởng đại đoàn kết: Khép lại nỗi đau chiến tranh để triệu con tim cùng hướng về tương lai."
+  },
+  {
+    "id": "qt-moratorium-dc",
+    "perspective": "international",
+    "category": "west_antiwar",
+    "title": "Biểu tình Moratorium chống chiến tranh Việt Nam (Washington D.C.)",
+    "locationName": "Washington D.C., Hoa Kỳ",
+    "coordinates": [38.8895, -77.0353],
+    "year": "1969",
+    "image": {
+      "url": "https://cdn.kienthuc.net.vn/images/xHPT4F6wca3CCetM_-9zPIUfnNJLmxPNHX0t6HL5aH0LpSciznqk_QWcbzzF188PrF3vDWW4MYWk3cHdj3i7SWJlrHuhvk9eUtLUVB-fMPG4gP8IZL-YgjEyYIxrDi8cDP9rTOFveAvkWMXJx7iXhw/anh-cuc-hiem-lan-song-bieu-tinh-phan-doi-chien-tranh-viet-nam-Hinh-2.jpeg.avif",
+      "caption": "Biển người biểu tình phản đối chiến tranh Việt Nam tại tượng đài Washington ngày 15/11/1969."
+    },
+    "quote": {
+      "text": "Tôi sẽ thay mặt nhân dân ta đi thăm và cảm ơn… các nước bầu bạn khắp năm châu đã tận tình ủng hộ và giúp đỡ cuộc chống Mỹ, cứu nước của nhân dân ta.",
+      "source": "Di chúc Chủ tịch Hồ Chí Minh, 1969"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=he4-R846-0A",
+      "label": "Tư liệu âm thanh Moratorium March Washington D.C 1969"
+    },
+    "shortDescription": "Cuộc tuần hành biểu tình lớn nhất lịch sử Mỹ, minh chứng nhân dân yêu chuộng hòa bình Mỹ đứng về phía Việt Nam."
+  },
+  {
+    "id": "qt-central-park-ny",
+    "perspective": "international",
+    "category": "west_antiwar",
+    "title": "Tuần hành Central Park đến LHQ – Martin Luther King Jr.",
+    "locationName": "Central Park, New York, Hoa Kỳ",
+    "coordinates": [40.7829, -73.9654],
+    "year": "1967",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Vietnam_War_protesters_at_the_March_on_the_Pentagon.jpg/800px-Vietnam_War_protesters_at_the_March_on_the_Pentagon.jpg",
+      "caption": "Hơn 400.000 người dưới sự dẫn dắt của Martin Luther King Jr. tuần hành phản chiến New York."
+    },
+    "quote": {
+      "text": "Nhân dân Mỹ và nhân dân Việt Nam không thù không oán… chúng tôi mong muốn có quan hệ hữu nghị với các bạn.",
+      "source": "Hồ Chí Minh: Thư gửi nhân dân Mỹ, 12/1961"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=he4-R846-0A",
+      "label": "Diễn văn chống chiến tranh Việt Nam của Martin Luther King Jr."
+    },
+    "shortDescription": "Gắn kết cuộc đấu tranh dân quyền người da màu và sinh viên Mỹ với công lý cho nhân dân Việt Nam."
+  },
+  {
+    "id": "qt-berkeley-cali",
+    "perspective": "international",
+    "category": "west_antiwar",
+    "title": "Phong trào sinh viên phản chiến tại UC Berkeley",
+    "locationName": "Sproul Plaza, UC Berkeley, California, Hoa Kỳ",
+    "coordinates": [37.8696, -122.2589],
+    "year": "1965",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Berkeley_Vietnam_protest_1965.jpg",
+      "caption": "Sinh viên trường UC Berkeley biểu tình phản chiến trên quảng trường Sproul Plaza."
+    },
+    "quote": {
+      "text": "Nhân dân Việt Nam phân biệt rất rõ nhân dân Mỹ yêu chuộng hòa bình và công lý với những thế lực hiếu chiến gây ra chiến tranh.",
+      "source": "Hồ Chí Minh: Thư gửi nhân dân Mỹ tiến bộ, 1968"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=6jO9YLwPCjg",
+      "label": "John Lennon - Give Peace a Chance (1969)"
+    },
+    "shortDescription": "Biểu tượng của giới trí thức trẻ dũng cảm đối diện chính quyền bảo vệ lẽ phải cho một đất nước xa xôi."
+  },
+  {
+    "id": "qt-trafalgar-london",
+    "perspective": "international",
+    "category": "west_antiwar",
+    "title": "Biểu tình chống chiến tranh Việt Nam tại Trafalgar Square",
+    "locationName": "Trafalgar Square, Luân Đôn, Vương quốc Anh",
+    "coordinates": [51.508, -0.1281],
+    "year": "1968",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/London_Vietnam_demonstration_1968.jpg/800px-London_Vietnam_demonstration_1968.jpg",
+      "caption": "Người dân Anh tuần hành với biểu ngữ hòa bình đòi chấm dứt chiến tranh tại Việt Nam."
+    },
+    "quote": {
+      "text": "Quan sơn muôn dặm một nhà / Bốn phương vô sản đều là anh em.",
+      "source": "Hồ Chí Minh"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=6jO9YLwPCjg",
+      "label": "Âm thanh tuần hành phản chiến tại London thập niên 1960"
+    },
+    "shortDescription": "Một trong những tâm điểm phản chiến lớn nhất châu Âu, khẳng định tình đoàn kết của nhân dân lao động Anh."
+  },
+  {
+    "id": "qt-olof-palme-sweden",
+    "perspective": "international",
+    "category": "west_antiwar",
+    "title": "Cuộc tuần hành đuốc của Olof Palme tại Stockholm",
+    "locationName": "Stockholm, Thụy Điển",
+    "coordinates": [59.3325, 18.0644],
+    "year": "1968",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Olof_Palme_Vietnam_1968.jpg",
+      "caption": "Thủ tướng tương lai Thụy Điển Olof Palme cầm đuốc tuần hành cùng đại sứ Nguyễn Thọ Chân (21/2/1968)."
+    },
+    "quote": {
+      "text": "Sự đoàn kết quốc tế có một ý nghĩa vô cùng to lớn đối với chúng tôi.",
+      "source": "Hồ Chí Minh"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=vGm4es5rJnQ",
+      "label": "Olof Palme - Bài phát biểu chấn động lịch sử ủng hộ Hà Nội 1972"
+    },
+    "shortDescription": "Lãnh đạo cấp cao Tây Âu công khai tuần hành ủng hộ Việt Nam, biến Thụy Điển thành biểu tượng đoàn kết quốc tế."
+  },
+  {
+    "id": "qt-paris-france",
+    "perspective": "international",
+    "category": "west_antiwar",
+    "title": "Tình bạn thủy chung giữa Bác Hồ và nhân dân Pháp",
+    "locationName": "Paris, Pháp",
+    "coordinates": [48.8566, 2.3522],
+    "year": "1946",
+    "image": {
+      "url": "https://baotanglichsu.vn/DataFiles/Uploaded/image/Aubrac-Ho-Chi-Minh-1946.jpg",
+      "caption": "Bác Hồ cùng gia đình người bạn Pháp Raymond Aubrac tại Paris năm 1946."
+    },
+    "quote": {
+      "text": "Nhân dân Việt Nam không bao giờ nhầm lẫn nước Pháp của Tự do - Bình đẳng - Bác ái với những kẻ thực dân áp bức. Chúng tôi luôn coi nhân dân Pháp là những người bạn tốt.",
+      "source": "Hồ Chí Minh: Họp báo tại Paris, 1946"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=vGm4es5rJnQ",
+      "label": "Khẩu hiệu đoàn kết Pháp - Việt trên đường phố Paris"
+    },
+    "shortDescription": "Minh chứng cho ngoại giao nhân dân xuất sắc: biến nước Pháp thành hậu thuẫn cho phái đoàn đàm phán hòa bình."
+  },
+  {
+    "id": "qt-cuba-havana",
+    "perspective": "international",
+    "category": "tricontinental",
+    "title": "La Habana – Tình anh em thủy chung Việt Nam – Cuba",
+    "locationName": "La Habana, Cuba",
+    "coordinates": [23.1136, -82.3666],
+    "year": "1966",
+    "image": {
+      "url": "https://baotuyenquang.com.vn/file/dataimages/201910/original/images1449963_images1904942_1.jpg",
+      "caption": "Chủ tịch Hồ Chí Minh đón tiếp nồng hậu các đoàn khách và đại diện nhân dân Cuba."
+    },
+    "quote": {
+      "text": "Việt Nam và Cuba cách xa nhau hàng vạn dặm, nhưng lòng dạ hai nước chúng ta gần gũi như anh em một nhà.",
+      "source": "Hồ Chí Minh: Tiếp đoàn đại biểu Cuba, Hồ Chí Minh Toàn tập tập 15, 1966"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=v4LcJKYR3Vk",
+      "label": "Lời hứa lịch sử: Vì Việt Nam, Cuba sẵn sàng hiến dâng cả máu của mình"
+    },
+    "shortDescription": "Biểu tượng cao đẹp của tình quốc tế vô sản trong sáng và lời hứa son sắt sẻ chia cùng một chiến hào."
+  },
+  {
+    "id": "qt-tricontinental-havana",
+    "perspective": "international",
+    "category": "tricontinental",
+    "title": "Hội nghị Ba Lục Địa Tricontinental (La Habana 1966)",
+    "locationName": "La Habana, Cuba",
+    "coordinates": [23.1226, -82.3865],
+    "year": "1966",
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/OSPAAAL_poster.jpg/600px-OSPAAAL_poster.jpg",
+      "caption": "Áp phích đoàn kết Tricontinental 1966 – diễn đàn 82 nước ủng hộ cuộc kháng chiến của Việt Nam."
+    },
+    "quote": {
+      "text": "Nhân dân Việt Nam đang chiến đấu không chỉ cho độc lập của mình mà còn cho độc lập của tất cả các dân tộc bị áp bức trên thế giới.",
+      "source": "Tuyên bố chung Hội nghị Ba Lục Địa Tricontinental, 1966"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=v4LcJKYR3Vk",
+      "label": "Diễn văn bế mạc Hội nghị Ba Lục Địa của Fidel Castro (15/1/1966)"
+    },
+    "shortDescription": "Quy tụ đại biểu 82 nước Á - Phi - Mỹ Latinh khẳng định ủng hộ vô điều kiện cuộc đấu tranh của Việt Nam."
+  },
+  {
+    "id": "qt-conakry-guinea",
+    "perspective": "international",
+    "category": "tricontinental",
+    "title": "Conakry (Guinea) – Bác Hồ với phong trào giải phóng châu Phi",
+    "locationName": "Conakry, Guinea, Tây Phi",
+    "coordinates": [9.6412, -13.5784],
+    "year": "1960",
+    "image": {
+      "url": "https://images.hcmcpv.org.vn//Uploads/Image/0505202118988A32/05-05-2021Bac_2.jpg",
+      "caption": "Bác Hồ đón tiếp Tổng thống Guinea Ahmed Sékou Touré tại sân bay Gia Lâm (1960)."
+    },
+    "quote": {
+      "text": "Nhân dân Việt Nam và nhân dân các nước châu Phi là những người bạn cùng chung cảnh ngộ, cùng chung mục tiêu đấu tranh chống chủ nghĩa đế quốc và thực dân để giành độc lập, tự do.",
+      "source": "Hồ Chí Minh: Điện mừng gửi Hội nghị Á - Phi, 1960"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=v4LcJKYR3Vk",
+      "label": "Tư liệu tình đoàn kết gắn bó Việt Nam và các dân tộc châu Phi"
+    },
+    "shortDescription": "Truyền cảm hứng và gắn kết cuộc đấu tranh giải phóng dân tộc của các nước thuộc địa châu Phi với Việt Nam."
+  },
+  {
+    "id": "qt-new-delhi-india",
+    "perspective": "international",
+    "category": "tricontinental",
+    "title": "New Delhi (Ấn Độ) – Nhịp cầu hòa bình phương Đông & Nehru",
+    "locationName": "New Delhi, Ấn Độ",
+    "coordinates": [28.6139, 77.209],
+    "year": "1958",
+    "image": {
+      "url": "https://vpdf.org.vn/upload/2001187/20210813/phat-huy-suc-manh-mem-kinh-nghiem-tu-viet-nam-va-an-do_1_92cd7.jpg",
+      "caption": "Bác Hồ thăm chính thức Ấn Độ và hội đàm thân mật cùng Thủ tướng Jawaharlal Nehru (1958)."
+    },
+    "quote": {
+      "text": "Tình hữu nghị giữa nhân dân Việt Nam và nhân dân Ấn Độ đã có từ lâu đời, được xây dựng trên nền tảng hiểu biết lẫn nhau và cùng yêu chuộng hòa bình.",
+      "source": "Hồ Chí Minh: Diễn văn mít tinh chào mừng tại New Delhi, 1958"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=TSOuAPeajZ0",
+      "label": "Ghi âm diễn từ của Bác Hồ trước nhân dân thủ đô New Delhi"
+    },
+    "shortDescription": "Điểm kết nối biểu tượng phong trào Không liên kết, thể hiện tư tưởng ngoại giao hòa bình phương Đông."
+  },
+  {
+    "id": "qt-moscow-russia",
+    "perspective": "international",
+    "category": "tricontinental",
+    "title": "Moskva – Khởi nguồn lý tưởng quốc tế vô sản",
+    "locationName": "Moskva, Liên Bang Nga",
+    "coordinates": [55.7558, 37.6173],
+    "year": "1924",
+    "image": {
+      "url": "https://baotanglichsu.vn/DataFiles/Uploaded/image/data%20Hung/thang%206%20nam%202014/Dai%20hoi%20lan%20thu%20V%20quoc%20te%20cong%20san%20tai%20Matcova/1.jpg",
+      "caption": "Nguyễn Ái Quốc tham dự Đại hội Quốc tế Cộng sản lần thứ V tại Moskva (1924)."
+    },
+    "quote": {
+      "text": "Chỉ có chủ nghĩa xã hội, chủ nghĩa cộng sản mới giải phóng được các dân tộc bị áp bức và những người lao động trên thế giới khỏi ách nô lệ.",
+      "source": "Hồ Chí Minh: Con đường dẫn tôi đến chủ nghĩa Lênin, 1960"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=vGm4es5rJnQ",
+      "label": "Hành khúc Quốc tế ca (The Internationale)"
+    },
+    "shortDescription": "Điểm khởi đầu kết nối phong trào giải phóng dân tộc Việt Nam vào quỹ đạo chung của vô sản toàn thế giới."
+  },
+  {
+    "id": "qt-beijing-china",
+    "perspective": "international",
+    "category": "tricontinental",
+    "title": "Bắc Kinh & Quảng Châu – Vừa là đồng chí, vừa là anh em",
+    "locationName": "Bắc Kinh & Quảng Châu, Trung Quốc",
+    "coordinates": [39.9042, 116.4074],
+    "year": "1925",
+    "image": {
+      "url": "https://baochinhphu.vn/Images/2019/12/bac-ho-va-chu-an-lai.jpg",
+      "caption": "Bác Hồ và Thủ tướng Chu Ân Lai – biểu tượng tình đoàn kết cách mạng giữa hai dân tộc."
+    },
+    "quote": {
+      "text": "Mối tình thắm thiết Việt - Hoa / Vừa là đồng chí, vừa là anh em.",
+      "source": "Hồ Chí Minh"
+    },
+    "audio": {
+      "url": "https://www.youtube.com/watch?v=TSOuAPeajZ0",
+      "label": "Nhạc hữu nghị Việt - Trung thập niên 1950"
+    },
+    "shortDescription": "Hậu phương lớn xã hội chủ nghĩa, tương trợ lẫn nhau trong sự nghiệp đấu tranh giải phóng dân tộc."
+  }
+]

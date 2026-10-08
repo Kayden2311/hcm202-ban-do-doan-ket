@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bản Đồ Đoàn Kết Lịch Sử — Tư Tưởng Hồ Chí Minh</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            app: {
+              bg: '#08131a',
+              mapBg: '#101d23',
+              land: '#203941',
+              border: '#50676d',
+              vnFill: '#b69455',
+              vnAccent: '#dfbd79',
+              markerInt: '#a8d7d1',
+              textMain: '#edf0e8',
+              textMuted: '#a1aaa7',
+              divider: 'rgba(226, 233, 221, 0.12)'
+            }
+          },
+          fontFamily: {
+            sans: ['"DM Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: STRICTLY DM Sans & Playfair Display only (Tuân thủ Mục 3) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- MapLibre GL CSS -->
+  <link href="https://unpkg.com/maplibre-gl@3.3.1/dist/maplibre-gl.css" rel="stylesheet" />
+
+  <!-- GSAP Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="relative min-h-[100dvh] w-screen overflow-hidden bg-[#08131a] text-[#edf0e8] font-sans select-none">
+
+  <!-- =========================================================================
+       1. BẢN ĐỒ NỀN VECTOR (100% OFFLINE, KHÔNG PHỤ THUỘC TILE API)
+       ========================================================================= -->
+  <main id="map-container" class="absolute inset-0 z-0 bg-[#101d23]" aria-label="Bản đồ tương tác"></main>
+
+  <!-- =========================================================================
+       2. HEADER CỐ ĐỊNH (TUÂN THỦ MỤC 4 & 7)
+       ========================================================================= -->
+  <header class="absolute top-0 left-0 right-0 z-30 px-5 md:px-8 py-4 flex items-center justify-between pointer-events-none">
+    
+    <!-- Thương hiệu bên trái -->
+    <div class="pointer-events-auto flex items-center gap-2.5">
+      <div class="w-7 h-7 rounded-full border border-[#dfbd79]/40 flex items-center justify-center text-[#dfbd79] glass-panel shadow-sm">
+        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="3" />
+          <circle cx="12" cy="4" r="1.5" />
+          <circle cx="12" cy="20" r="1.5" />
+          <circle cx="4" cy="12" r="1.5" />
+          <circle cx="20" cy="12" r="1.5" />
+          <line x1="12" y1="5.5" x2="12" y2="9" stroke="currentColor" stroke-width="1.2" />
+          <line x1="12" y1="15" x2="12" y2="18.5" stroke="currentColor" stroke-width="1.2" />
+          <line x1="5.5" y1="12" x2="9" y2="12" stroke="currentColor" stroke-width="1.2" />
+          <line x1="15" y1="12" x2="18.5" y2="12" stroke="currentColor" stroke-width="1.2" />
+        </svg>
+      </div>
+      <div>
+        <div class="text-[11px] font-semibold tracking-[0.18em] uppercase text-[#edf0e8]">
+          ĐOÀN KẾT
+        </div>
+        <div class="text-[8px] tracking-[0.14em] uppercase text-[#dfbd79]">
+          BẢN ĐỒ LỊCH SỬ
+        </div>
+      </div>
+    </div>
+
+    <!-- Nhãn góc nhìn hiện tại ở giữa (ẩn trên mobile theo Mục 8) -->
+    <div class="hidden md:flex items-center gap-2 pointer-events-auto glass-panel px-3.5 py-1.5 rounded-full text-[10px] text-[#a1aaa7] tracking-wider uppercase">
+      <span id="header-context-dot" class="w-1.5 h-1.5 rounded-full bg-[#ff3b47]"></span>
+      <span id="header-context-label">KHÔNG GIAN VIỆT NAM</span>
+    </div>
+
+    <!-- Nút chuyển đổi góc nhìn bên phải -->
+    <div class="pointer-events-auto">
+      <button id="btn-perspective-toggle" class="flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel hover:bg-[#203941]/60 text-[11px] font-medium tracking-wide text-[#edf0e8] transition-all cursor-pointer active:scale-95" aria-label="Chuyển đổi góc nhìn bản đồ">
+        <span id="perspective-button-text">BẠN BÈ NĂM CHÂU</span>
+        <svg id="perspective-button-icon" class="w-3 h-3 text-[#dfbd79]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="7" y1="17" x2="17" y2="7"></line>
+          <polyline points="7 7 17 7 17 17"></polyline>
+        </svg>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- =========================================================================
+       3. THẺ GIỚI THIỆU BÊN TRÁI (TUÂN THỦ MỤC 3, 4 & 7)
+       ========================================================================= -->
+  <section id="hero-narrative" class="absolute left-6 md:left-12 top-24 md:top-32 z-20 max-w-sm pointer-events-none transition-all duration-700">
+    
+    <!-- Nhãn nhỏ (7-9px chữ hoa, tracking rộng theo Mục 3) -->
+    <div class="flex items-center gap-2 text-[8px] md:text-[9px] uppercase tracking-[0.2em] text-[#dfbd79] mb-2.5">
+      <span class="w-5 h-[1px] bg-[#dfbd79]"></span>
+      <span id="hero-eyebrow">MỘT TƯ TƯỞNG · NHIỀU NHỊP CẦU</span>
+    </div>
+
+    <!-- Tiêu đề trang (Playfair Display, 39-45px theo Mục 3) -->
+    <h1 id="hero-title" class="text-[38px] md:text-[44px] font-serif leading-[1.12] text-[#edf0e8]">
+      Nước non <br/>
+      <span class="italic font-serif text-[#dfbd79]">một nhà.</span>
+    </h1>
+
+    <!-- Mô tả (DM Sans, 11-12px, line-height rộng theo Mục 3) -->
+    <p id="hero-desc" class="text-[11px] md:text-[12px] text-[#a1aaa7] leading-[1.65] mt-3.5 max-w-xs drop-shadow-sm">
+      Từ miền núi phía Bắc đến đồng bằng phương Nam, cùng khám phá những sợi dây gắn kết con người Việt Nam.
+    </p>
+
+    <!-- Thống kê & chỉ dẫn -->
+    <div class="flex items-center gap-5 mt-7">
+      <div class="flex items-baseline gap-2">
+        <span id="hero-metric-num" class="text-2xl md:text-3xl font-serif text-[#edf0e8] font-bold">11</span>
+        <span class="text-[8px] text-[#a1aaa7] uppercase leading-tight tracking-wider">địa điểm<br/>được kể lại</span>
+      </div>
+      <div class="w-[1px] h-6 bg-[rgba(226,233,221,0.12)]"></div>
+      <div class="text-[8px] text-[#dfbd79] uppercase tracking-[0.14em] leading-tight">
+        CHẠM VÀO<br/>MỘT ĐIỂM SÁNG
+      </div>
+    </div>
+
+    <!-- Dòng chân trang phụ -->
+    <div class="mt-10 text-[8px] text-[#a1aaa7]/70 uppercase tracking-widest flex items-center gap-1.5">
+      <span>*</span>
+      <span>KẾT NỐI TỪ NHỮNG ĐIỀU CHUNG</span>
+    </div>
+
+  </section>
+
+  <!-- =========================================================================
+       4. PANEL CÂU CHUYỆN (TUÂN THỦ MỤC 4 & MỤC 6 ĐỊNH DẠNG NỘI DUNG)
+       Desktop: trượt từ phải • Mobile: trượt từ dưới
+       ========================================================================= -->
+  <aside id="dossier-panel" class="absolute md:top-5 md:right-5 md:bottom-5 bottom-0 left-0 right-0 md:left-auto md:w-[430px] lg:w-[450px] max-h-[85vh] md:max-h-none z-40 translate-y-[110%] md:translate-y-0 md:translate-x-[110%] opacity-0 pointer-events-none transition-all duration-500 ease-out flex flex-col glass-panel rounded-t-2xl md:rounded-2xl shadow-2xl overflow-hidden" aria-label="Chi tiết câu chuyện lịch sử">
+    
+    <!-- Thanh tiêu đề panel -->
+    <div class="px-5 py-3.5 flex items-center justify-between border-b border-[rgba(226,233,221,0.12)] bg-[#101d23]/50">
+      <!-- 1. Nhóm và thời gian (Mục 6.1) -->
+      <span id="dossier-group-time" class="text-[8.5px] font-medium tracking-[0.16em] uppercase text-[#dfbd79]">
+        VIỆT NAM · 1945
+      </span>
+
+      <button id="btn-close-dossier" class="w-6 h-6 rounded-full bg-white/5 hover:bg-white/15 text-[#a1aaa7] hover:text-[#edf0e8] flex items-center justify-center transition active:scale-95 cursor-pointer" aria-label="Đóng câu chuyện">
+        <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Nội dung cuộn câu chuyện -->
+    <div class="flex-1 overflow-y-auto p-5 space-y-4 dossier-scroll">
+      
+      <!-- Khung ảnh minh họa / tư liệu -->
+      <div class="relative rounded-xl overflow-hidden border border-[rgba(226,233,221,0.12)] bg-[#08131a]">
+        <img id="dossier-image" src="" alt="Hình ảnh liên quan đến sự kiện" class="w-full h-48 md:h-52 object-cover object-center filter contrast-[1.03]" />
+        <!-- Chú thích ảnh ghi rõ minh họa hay tư liệu (Mục 6) -->
+        <div class="absolute bottom-0 inset-x-0 p-2.5 bg-gradient-to-t from-[#08131a]/95 via-[#08131a]/70 to-transparent flex items-end justify-between">
+          <p id="dossier-image-caption" class="text-[10px] text-[#a1aaa7] italic truncate max-w-[78%]">
+            Ảnh minh họa
+          </p>
+          <span id="dossier-page-indicator" class="text-[8.5px] text-[#dfbd79] bg-black/60 px-1.5 py-0.5 rounded border border-white/10">
+            01 / 11
+          </span>
+        </div>
+      </div>
+
+      <!-- 2. Tiêu đề ngắn (Mục 6.2 - Playfair Display, 23-26px theo Mục 3) -->
+      <h2 id="dossier-title" class="text-[23px] md:text-[25px] font-serif font-bold text-[#edf0e8] leading-tight">
+        Tiêu đề câu chuyện
+      </h2>
+
+      <!-- 3. Trích dẫn (Mục 6.3 - Playfair Display, có nguồn) -->
+      <div class="relative pl-4 border-l-2 border-[#dfbd79] py-1 bg-[rgba(223,189,121,0.04)] rounded-r-lg pr-3">
+        <blockquote id="dossier-quote-text" class="text-[13px] font-serif italic text-[#edf0e8] leading-relaxed">
+          "..."
+        </blockquote>
+        <div id="dossier-quote-source" class="text-[9.5px] text-[#dfbd79] mt-1.5">
+          — Nguồn kiểm chứng
+        </div>
+      </div>
+
+      <!-- 4. Bối cảnh (Mục 6.4 - 11-12px, 2-4 câu) -->
+      <p id="dossier-description" class="text-[11.5px] text-[#a1aaa7] leading-[1.65]">
+        Bối cảnh sự kiện lịch sử...
+      </p>
+
+      <!-- 5. Địa danh (Mục 6.5) -->
+      <div class="flex items-center gap-1.5 text-[11px] text-[#edf0e8]">
+        <span class="text-[#dfbd79]">📍</span>
+        <span id="dossier-location" class="text-[#a1aaa7]">Địa danh</span>
+      </div>
+
+      <!-- 6. Âm thanh tư liệu (Mục 6.6 - chỉ hiện khi có bản ghi hợp lệ) -->
+      <div id="dossier-audio-box" class="rounded-xl bg-[#101d23] border border-[rgba(226,233,221,0.12)] p-3 flex items-center justify-between gap-3">
+        <div class="flex items-center gap-2.5">
+          <button id="btn-dossier-audio" class="w-8 h-8 rounded-full bg-[#dfbd79] hover:bg-[#edf0e8] text-[#08131a] flex items-center justify-center transition active:scale-95 cursor-pointer shrink-0" aria-label="Phát âm thanh tư liệu">
+            <svg id="audio-play-icon" class="w-3 h-3 fill-current ml-0.5" viewBox="0 0 24 24" aria-hidden="true">
+              <polygon points="5,3 19,12 5,21" />
+            </svg>
+            <svg id="audio-pause-icon" class="w-3 h-3 fill-current hidden" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="6" y="4" width="4" height="16" />
+              <rect x="14" y="4" width="4" height="16" />
+            </svg>
+          </button>
+          <div>
+            <div class="text-[11px] font-medium text-[#edf0e8]">
+              Âm thanh tư liệu
+            </div>
+            <div id="audio-label" class="text-[9px] text-[#a1aaa7] truncate max-w-[190px]">
+              Đang phát bản ghi
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <!-- Equalizer sóng âm -->
+          <div id="audio-equalizer" class="flex items-end gap-0.5 h-3 px-1" aria-hidden="true">
+            <span class="eq-bar h-1"></span>
+            <span class="eq-bar h-2"></span>
+            <span class="eq-bar h-1"></span>
+            <span class="eq-bar h-3"></span>
+          </div>
+          <span class="text-[8px] uppercase tracking-wider text-[#dfbd79] bg-[#dfbd79]/10 border border-[#dfbd79]/30 px-1.5 py-0.5 rounded">
+            TƯ LIỆU
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Thanh chuyển nhanh dưới cùng -->
+    <div class="px-5 py-2.5 border-t border-[rgba(226,233,221,0.12)] bg-[#101d23]/80 flex items-center justify-between text-[10px]">
+      <button id="btn-prev-point" class="text-[#a1aaa7] hover:text-[#edf0e8] flex items-center gap-1.5 transition active:scale-95 cursor-pointer" aria-label="Xem điểm trước">
+        <span>←</span>
+        <span>TRƯỚC</span>
+      </button>
+
+      <span class="text-[8.5px] uppercase tracking-widest text-[#a1aaa7]/60">
+        HỒ CHÍ MINH
+      </span>
+
+      <button id="btn-next-point" class="text-[#dfbd79] hover:text-[#edf0e8] flex items-center gap-1.5 transition active:scale-95 cursor-pointer font-medium" aria-label="Xem điểm kế tiếp">
+        <span>KẾ TIẾP</span>
+        <span>→</span>
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- MapLibre JS -->
+  <script src="https://unpkg.com/maplibre-gl@3.3.1/dist/maplibre-gl.js"></script>
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

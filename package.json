@@ -1,0 +1,21 @@
+{
+  "name": "cay-doan-ket-hcm202",
+  "version": "1.0.0",
+  "description": "Cây Đoàn Kết – Web Bản đồ Tương tác Tư tưởng Hồ Chí Minh (HCM202)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve -l 3000 .",
+    "start": "npx serve -l 3000 .",
+    "preview": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "hcm202",
+    "ho-chi-minh",
+    "interactive-map",
+    "dai-doan-ket",
+    "maplibre",
+    "gsap"
+  ],
+  "author": "HCM202 Group",
+  "license": "MIT"
+}
